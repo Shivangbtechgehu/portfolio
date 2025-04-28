@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Add styles for the sections */
-        .about, .skills-section, .contact-section {
-            display: none;
+        .section {
             background-color: #222;
             color: white;
             padding: 20px;
             margin-top: 10px;
             text-align: left;
             border-radius: 10px;
+        }
+
+        .home, .skills, .contact, .about {
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* Make sure the button doesn't exist anymore */
+        .btn {
+            display: none;
         }
     </style>
 </head>
@@ -33,7 +42,7 @@
     </header>
 
     <!-- Home Section -->
-    <section class="home">
+    <section class="home section">
         <div class="home-container">
             <div class="home-img">
                 <img src="images/WhatsApp Image 2025-03-17 at 13.24.19_8f42bb08.jpg" alt="Shivang">
@@ -44,33 +53,34 @@
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/shivang-18412927b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a href="javascript:void(0)" class="btn" id="hireBtn">Hire me</a>
-
-                <!-- Sections inside the Hire Me button -->
-                <div class="about" id="aboutSection">
-                    <h2>About Me</h2>
-                    <p>Hello! I'm a second-year B.Tech student majoring in Computer Science and Engineering. I have a growing passion for web development, cybersecurity, and solving practical problems through smart software solutions.</p>
-                    <p>Currently, I'm working on projects Steganography and Smart Metro System. I’m also exploring data structures, algorithms, and competitive programming through platforms like CodeChef and Codeforces to sharpen my problem-solving skills.</p>
-                    <p>I enjoy building real-world projects, learning by doing, and collaborating with others. My goal is to grow consistently—both technically and personally—and contribute meaningfully to the tech community.</p>
-                </div>
-
-                <div class="skills-section" id="skillsSection">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>Java, C++, C, Python</li>
-                    </ul>
-                </div>
-
-                <div class="contact-section" id="contactSection">
-                    <h2>Contact</h2>
-                    <p>If you have any queries, feel free to reach out to me:</p>
-                    <p>Email: <a href="mailto:shivang2006lucky@gmail.com">shivang2006lucky@gmail.com</a></p>
-                    <p>Phone: <a href="tel:7895463009">7895463009</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/shivang-18412927b">Shivang</a></p>
-                </div>
             </div>
         </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about section" id="aboutSection">
+        <h2>About Me</h2>
+        <p>Hello! I'm a second-year B.Tech student majoring in Computer Science and Engineering. I have a growing passion for web development, cybersecurity, and solving practical problems through smart software solutions.</p>
+        <p>Currently, I'm working on projects Steganography and Smart Metro System. I’m also exploring data structures, algorithms, and competitive programming through platforms like CodeChef and Codeforces to sharpen my problem-solving skills.</p>
+        <p>I enjoy building real-world projects, learning by doing, and collaborating with others. My goal is to grow consistently—both technically and personally—and contribute meaningfully to the tech community.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skillsSection">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java, C++, C, Python</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contactSection">
+        <h2>Contact</h2>
+        <p>If you have any queries, feel free to reach out to me:</p>
+        <p>Email: <a href="mailto:shivang2006lucky@gmail.com">shivang2006lucky@gmail.com</a></p>
+        <p>Phone: <a href="tel:7895463009">7895463009</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shivang-18412927b">Shivang</a></p>
     </section>
 
 </body>
