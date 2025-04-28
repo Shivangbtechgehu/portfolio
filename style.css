@@ -1,6 +1,6 @@
-/* Presentation Section */
+/* Presentation Section with embedded PDF */
 .presentation-section {
-    background-image: url('images/e53a6d9f-1f09-43b1-95b0-02f9ba437ba8.png'); /* your uploaded image */
+    background-image: url('images/e53a6d9f-1f09-43b1-95b0-02f9ba437ba8.png'); /* background image */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -8,68 +8,28 @@
     text-align: center;
     margin-top: 50px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
 }
 
-/* Heading Style */
 .presentation-heading {
-    font-size: 2.5rem; /* Increased font size for emphasis */
-    margin-bottom: 20px;
-    color: #f1c40f; /* Bright yellow color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Strong shadow for text */
-    font-weight: 700; /* Bold text */
-    letter-spacing: 1px; /* Slight letter spacing for better readability */
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #f1c40f;
+    text-shadow: 2px 2px 5px #000;
 }
 
-/* Button Style */
-.presentation-container .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 30px;
-    background: linear-gradient(45deg, #b74b4b, #f39c12); /* Gradient background */
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem; /* Slightly larger text */
-    border-radius: 30px; /* Rounded corners */
-    transition: all 0.3s ease; /* Smooth transition */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
-}
-
-/* Hover Effect on Button */
-.presentation-container .btn:hover {
-    background: linear-gradient(45deg, #f39c12, #b74b4b); /* Inverted gradient */
-    color: black; /* Black text on hover */
-    transform: scale(1.05); /* Slightly larger button on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
-}
-
-/* Presentation Images */
-.presentation-images {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.presentation-images img {
-    max-width: 100%;
+/* Style for the photo above the PDF */
+.presentation-photo {
+    width: 300px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for images */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
-.presentation-images img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .presentation-heading {
-        font-size: 2rem; /* Smaller font size on mobile */
-    }
-    .presentation-container .btn {
-        padding: 10px 20px; /* Smaller button */
-        font-size: 1rem;
-    }
+/* Style for embedded PDF */
+.presentation-pdf {
+    width: 90%;
+    height: 600px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    border-radius: 10px;
 }
