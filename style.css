@@ -1,16 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* General Styles */
 body {
     background-color: black;
     color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
@@ -39,21 +37,20 @@ nav a:hover {
     border-bottom: 2px solid #d69e9e;
 }
 
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 5rem;
-    background: linear-gradient(to right, black, #1a1a1a);
+/* Section Styles */
+.section {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 10px;
 }
 
-.home-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 2rem;
+/* Home Section */
+.home {
+    padding: 40px;
+    margin-bottom: 20px;
 }
 
 .home-img img {
@@ -66,11 +63,6 @@ nav a:hover {
 
 .home-img img:hover {
     transform: scale(1.1);
-}
-
-.home-content {
-    max-width: 600px;
-    text-align: center;
 }
 
 .home-content h1 {
@@ -101,41 +93,44 @@ nav a:hover {
     color: #b74b4b;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 10px 20px;
-    background: #b74b4b;
+/* About Me Section */
+.about h2 {
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+/* Skills Section */
+.skills h2 {
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Contact Section */
+.contact h2 {
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+.contact-container p {
+    margin: 1rem 0;
+}
+
+.contact-container a {
     color: white;
-    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
-.btn:hover {
-    background: white;
-    color: black;
-}
-
-@media (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        padding: 3rem 1rem;
-        text-align: center;
-    }
-
-    .home-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-img img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .home-content h1 {
-        font-size: 2rem;
-    }
+.contact-container a:hover {
+    color: #b74b4b;
 }
