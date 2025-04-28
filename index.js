@@ -1,6 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const hireBtn = document.getElementById("hireBtn");
+    const aboutSection = document.getElementById("aboutSection");
+    const skillsSection = document.getElementById("skillsSection");
+    const contactSection = document.getElementById("contactSection");
+
+    // Toggle visibility for each section inside the Hire Me button
+    hireBtn.addEventListener("click", function () {
+        // Toggle the visibility of the About Me, Skills, and Contact sections
+        if (aboutSection.style.display === "none" || aboutSection.style.display === "") {
+            aboutSection.style.display = "block";
+            skillsSection.style.display = "block";
+            contactSection.style.display = "block";
+        } else {
+            aboutSection.style.display = "none";
+            skillsSection.style.display = "none";
+            contactSection.style.display = "none";
+        }
+    });
+
     const navLinks = document.querySelectorAll("nav a");
-    
+
     // Add active class to current page link
     navLinks.forEach(link => {
         if (link.href === window.location.href) {
