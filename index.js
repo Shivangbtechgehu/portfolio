@@ -1,33 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const hireBtn = document.getElementById("hireBtn");
-    const aboutSection = document.getElementById("aboutSection");
-    const skillsSection = document.getElementById("skillsSection");
-    const contactSection = document.getElementById("contactSection");
+    const hireBtn = document.getElementById("hireBtn"); // Get Hire Me button
+    const aboutSection = document.getElementById("aboutSection"); // About Me Section
+    const skillsSection = document.getElementById("skillsSection"); // Skills Section
+    const contactSection = document.getElementById("contactSection"); // Contact Section
 
-    // Toggle visibility for each section inside the Hire Me button
+    // Add click event listener for Hire Me button
     hireBtn.addEventListener("click", function () {
-        // Toggle the visibility of the About Me, Skills, and Contact sections
+        // Check if sections are currently hidden and toggle visibility
         if (aboutSection.style.display === "none" || aboutSection.style.display === "") {
-            aboutSection.style.display = "block";
-            skillsSection.style.display = "block";
-            contactSection.style.display = "block";
+            aboutSection.style.display = "block"; // Show About Me section
+            skillsSection.style.display = "block"; // Show Skills section
+            contactSection.style.display = "block"; // Show Contact section
         } else {
-            aboutSection.style.display = "none";
-            skillsSection.style.display = "none";
-            contactSection.style.display = "none";
+            aboutSection.style.display = "none"; // Hide About Me section
+            skillsSection.style.display = "none"; // Hide Skills section
+            contactSection.style.display = "none"; // Hide Contact section
         }
     });
 
+    // Smooth scrolling for internal links (if any)
     const navLinks = document.querySelectorAll("nav a");
-
-    // Add active class to current page link
-    navLinks.forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add("active");
-        }
-    });
-
-    // Smooth scrolling for internal links
     navLinks.forEach(link => {
         link.addEventListener("click", function (e) {
             if (this.getAttribute("href").startsWith("#")) {
